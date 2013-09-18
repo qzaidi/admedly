@@ -2,7 +2,7 @@
 <div class="container">
   <h1 class="logo">
     <a href="index.html">
-      <img alt="Porto" src="img/logo.png">
+      <img alt="Admedly" src="/img/logo.png">
     </a>
   </h1>
   <div class="search">
@@ -16,7 +16,7 @@
   <nav>
   <ul class="nav nav-pills nav-top">
     <li>
-    <a href="about-us.html"><i class="icon-angle-right"></i>About Us</a>
+    <a href="/about-us/"><i class="icon-angle-right"></i>About Us</a>
     </li>
     <li>
     <a href="contact-us.html"><i class="icon-angle-right"></i>Contact Us</a>
@@ -35,8 +35,8 @@
   </div>
   <nav>
   <ul class="nav nav-pills nav-main" id="mainMenu">
-    <li class="dropdown active">
-    <a class="dropdown-toggle" href="index.html">
+    <li class="dropdown {% if page.title == "Home" %}active{% endif %}">
+    <a class="dropdown-toggle" href="/">
       Home
       <i class="icon-angle-down"></i>
     </a>
@@ -53,8 +53,8 @@
       <li><a href="index-one-page.html">One Page Website</a></li>
     </ul>
     </li>
-    <li>
-    <a href="about-us.html">About Us</a>
+    <li {% if page.title == "About Us" %}class="active"{% endif %}>
+    <a href="/about-us/">About Us</a>
     </li>
     <li class="dropdown">
     <a class="dropdown-toggle" href="#">
