@@ -1,0 +1,10 @@
+name: "Admedly"
+description: ""
+
+url: "http://admedly.com"
+
+paginate: 10
+
+markdown: redcarpet
+permalink: pretty
+pygments: true
